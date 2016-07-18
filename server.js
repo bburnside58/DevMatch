@@ -28,10 +28,9 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-/*Our controller file as per the MVC standard
-			//require('./controllers/controller.js')(app);
-=============Uncomment this section once controller.js file is complete===================
-*/
+//Our controller file as per the MVC standard
+require('./controllers/controller.js')(app);
+
 
 var PORT = process.env.PORT || 8080;
 

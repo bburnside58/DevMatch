@@ -16,8 +16,8 @@ ON A.Key = B.Key */
 	            resolve(result);
 	        });
     	});
-    }
-    /* For the next 2 functions below, I need to learn how to tie the User table with the skills table 
+    },
+   /* For the next 2 functions below, I need to learn how to tie the User table with the skills table 
     together by id 
     addUsers: function(id){
     	return new Promise(function(resolve, reject){
@@ -26,8 +26,8 @@ ON A.Key = B.Key */
     			resolve(result);
     		})
     	})
-    }
-
+    },*/
+/*
     addSkills: function(id){
     	return new Promise(function(resolve, reject){
     		var queryString = 'INSERT INTO skills WHERE id = ?';
@@ -35,7 +35,7 @@ ON A.Key = B.Key */
     			resolve(result);
     		})
     	})
-    }
+    },
     
    	addCompanyInfo: function(score){
    		return new Promise(function(resolve, reject){
@@ -44,7 +44,7 @@ ON A.Key = B.Key */
    				resolve(result);
    			})
    		})
-   	}
+   	},
 
    	*/
 

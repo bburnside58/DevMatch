@@ -14,7 +14,7 @@
 	</div><!--end of header div-->
 
 <fieldset>
-{{#each users}}
+
 <!--BRIAN UPDATE HERE-->
 <form class="create-update-form" action="/update/{{this.id}}?_method=PUT" method="POST">
 
@@ -49,9 +49,9 @@
     </br>
     </div>
     </form>
-{{/each}}
 
-{{#each skills}}
+
+
 
 <!--BRIAN UPDATE HERE-->
 <form class="create-update-form" action="/update/{{this.id}}?_method=PUT" method="POST">
@@ -90,7 +90,7 @@
             </br>
             </form>
             </div>
-{{/each}}
+
 	</fieldset> 
 
 	<fieldset><!--groups the personality quiz together-->
@@ -99,92 +99,92 @@
 	<h3>I enjoy collaborating with a team.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q1">
 	 		<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option> 
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option> 
        	</select>
     	<h3>I do my best work under pressure.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q2">
 	 		<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option> 
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option> 
        	</select>
        	<h3>I use established systems and routines to complete tasks.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q3">
 	 		<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option> 
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option> 
        	</select>
        		<h3>It's hard for me to take time for leisure when there's still work to do.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q4">
 	 		<option value=""></option>
-            <option value="5">Not like me at all</option>
-            <option value="4">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="2">A lot like me</option>
-            <option value="1">Exactly like me</option> 
+            <option value="10">Not like me at all</option>
+            <option value="8">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="4">A lot like me</option>
+            <option value="2">Exactly like me</option> 
        	</select>
        		<h3>I enjoy mentoring other team members.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q5">
 	 		<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option>  
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option>  
        	</select>
        	<h3>I have trouble telling my colleagues "no".</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q6">
 	 		<option value=""></option>
-            <option value="5">Not like me at all</option>
-            <option value="4">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="2">A lot like me</option>
-            <option value="1">Exactly like me</option> 
+            <option value="10">Not like me at all</option>
+            <option value="8">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="4">A lot like me</option>
+            <option value="2">Exactly like me</option> 
        	</select>
        	<h3>When I brainstorm, I talk to others about my ideas.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q7">
 	 		<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option> 
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option> 
        	</select>
        	<h3>I focus best alone in a room.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q8">
 	 		<option value=""></option>
-            <option value="5">Not like me at all</option>
-            <option value="4">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="2">A lot like me</option>
-            <option value="1">Exactly like me</option> 
+            <option value="10">Not like me at all</option>
+            <option value="8">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="4">A lot like me</option>
+            <option value="2">Exactly like me</option> 
        	</select>
        	<h3>I'm comfortable receiving constructive feedback.</h3>
 	 	<select data-placeholder="" class="chosen-select" id="q9">
 	 	<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option> 
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option> 
        	</select>
        	<h3>I enjoy building relationships with my team members. </h3>
 	 	<select data-placeholder="" class="chosen-select" id="q10">
 	 		<option value=""></option>
-            <option value="1">Not like me at all</option>
-            <option value="2">A little like me</option>
-            <option value="3">Somewhat like me</option>
-            <option value="4">A lot like me</option>
-            <option value="5">Exactly like me</option> 
+            <option value="2">Not like me at all</option>
+            <option value="4">A little like me</option>
+            <option value="6">Somewhat like me</option>
+            <option value="8">A lot like me</option>
+            <option value="10">Exactly like me</option> 
        	</select>
        	
 	</fieldset><!--end of personality questions-->
@@ -201,6 +201,6 @@
 <!-- jQuery -->
 <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
 <!-- javascript -->
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="js/applicant.js"></script>
 </body>
 </html>

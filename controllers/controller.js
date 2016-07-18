@@ -12,25 +12,44 @@ var bodyParser = require('body-parser');
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var callOrmFunctions = require('../models/model.js');
+var orm = require('../config/orm.js');
 
 module.exports = function(app){
 
 	app.get('/', function(req, res) {
-		orm.selectFramework('users').then(function(data){
-			console.log(data);
+		//orm.selectAll('users').then(function(data){
+			//console.log(data);
 			/* This is where we will eventually render the page for the recruiter to view 
 			aplicants */
-			res.render('admin', {
-				users: data
-        	});
-		})
+			res.render('index');
+		//})
+   	});
+
+   	app.get('/apps', function(req, res) {
+		//orm.selectAll('users').then(function(data){
+			//console.log(data);
+			/* This is where we will eventually render the page for the recruiter to view 
+			aplicants */
+			res.render('applicant');
+		//})
+   	});
+
+   	app.get('/admin', function(req, res) {
+		//orm.selectAll('users').then(function(data){
+			//console.log(data);
+			/* This is where we will eventually render the page for the recruiter to view 
+			aplicants */
+			res.render('admin');
+		//})
    	});
 /*
-	app.put('/addUser', function(req,res){
-		orm.addUsers('').then(function(data){
+	app.put('/admin', function(req,res){
+		orm.addUsers('users').then(function(data){
 			console.log(data);
-			res.redirect('/');
+			//res.redirect('/');
+			res.render('applicant', {
+				user: data
+			})
 		})
 	})
 
