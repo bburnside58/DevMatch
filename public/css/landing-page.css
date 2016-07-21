@@ -35,7 +35,11 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
+<<<<<<< HEAD
+    background: url(../img/work2.jpg) no-repeat center center;
+=======
     background: url(../img/intro-bg.jpg) no-repeat center center;
+>>>>>>> a97c9e3073cf55f255f71c51f500f4e2cce1a1bf
     background-size: cover;
 }
 
@@ -116,7 +120,11 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
+<<<<<<< HEAD
+    background: url(../img/orlando.jpg) no-repeat center center;
+=======
     background: url(../img/banner-bg.jpg) no-repeat center center;
+>>>>>>> a97c9e3073cf55f255f71c51f500f4e2cce1a1bf
     background-size: cover;
 }
 

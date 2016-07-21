@@ -25,26 +25,27 @@ CREATE TABLE recruiter(
 CREATE TABLE skills(
 	CSS boolean not null,
     HTML boolean not null,
-    Node boolean not null,
-    Angular boolean not null,
-    Ruby_on_Rails boolean not null,
+    Ruby_Rails boolean not null,
     Java boolean not null,
     Javascript boolean not null,
-	MySQL boolean not null,
+    MySQL boolean not null,
     React boolean not null,
-    PHP boolean not null,
-    Python boolean not null,
-    Groovy_on_Grails boolean not null,
-    C boolean not null,
-    first_language varchar(255) NOT NULL,
+	PHP boolean not null,
+    Groovy_Grails boolean not null,
+    C_plus_plus boolean not null,
+    others varchar(255) NOT NULL,
     user_id int NOT NULL,
     recruiters_id int NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (recruiters_id) REFERENCES recruiter(id)
 );
 
+ALTER TABLE skills ADD score int NOT NULL;
+ALTER TABLE skills ADD personality_type varchar(255) NOT NULL;
+
 CREATE TABLE if not exists users_table(
    userId integer primary key auto_increment,
    username varchar(100) unique,
    password varchar(100)
 )
+

@@ -13,6 +13,8 @@ ON A.Key = B.Key */
     	return new Promise(function(resolve, reject) {
 	        // var queryString = 'SELECT * FROM' + table + 'A LEFT JOIN skills B ON A.Key = B.Key';
           var queryString = 'SELECT * FROM ' + table;
+    		//may need to do A.ID instead of A.Key format
+	        var queryString = 'SELECT * FROM' + table + 'A LEFT JOIN skills B ON A.ID = B.ID';
 	        connection.query(queryString, function(err, result) {
 	            if (err) throw err;
               resolve(result);

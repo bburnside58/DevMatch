@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Applicants Stored In the Database:</h1>
 <ul>
   {{#each users}}
@@ -14,3 +15,88 @@
     </div>
   {{/each}}
 </ul>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    {{!-- Bootstrap CSS CDN --}}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    {{!-- JQuery CDN --}}
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    {{!-- Bootstrap JS CDN --}}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    {{!-- Applicant.handlebars script file --}}
+    <script src="/js/applicant.js"></script>
+
+    <title>DevMatch</title>
+    {{!-- Import header partials --}}
+    {{>header}}
+</head>
+<body>
+
+
+
+    <h1>Welcome Recruiters!!</h1>
+
+    {{!-- Main body content --}}
+    {{{ body }}}
+
+<h1>Applicants Stored In the Database:</h1>
+
+<h2>Search for potential applicants</h2>
+
+//start of search form
+<form class="create-form" method="POST" action="">
+    <div class="form-group">
+        <label for="score">Applicants:</label>
+        <textarea id="quo" name="quote" rows="8" cols="40"></textarea>
+    </div>
+
+    <button type="submit">Search</button>
+</form>
+
+//New applicants being pushed into the database
+<form class="create-form" method="POST" action="">
+    <div class="form-group">
+        <label for="applicant">Applicants:</label>
+        <input type="text" id="users" name="users" value="{{this.first_name}}">
+    </div>
+</form>
+
+
+//page loads with the names of the applicants based on their score
+
+$('#submit').on('click',function(event){
+var search = $(this).data('applicants');
+for (var i = 0; i < users.length; i ++){
+if (search == company.score){
+return
+    <ul>
+        {{#each users}}
+            <li>
+                <p><span class="label">First Name:</span> {{this.first_name}}</p>
+                <p><span class="label">Last Name:</span> {{this.last_name}}</p>
+            </li>
+        {{/each}}
+     </ul>
+    }
+    }
+};
+                <p><span class="label">Score:</span> {{this.score}}</p>
+            </li>
+        {{/each}}
+    </ul>
+
+    {{!-- Import footer partials --}}
+    {{>footer}}
+</body>
+</html>
+
+
+>>>>>>> a97c9e3073cf55f255f71c51f500f4e2cce1a1bf

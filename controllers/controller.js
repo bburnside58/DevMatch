@@ -151,8 +151,6 @@ module.exports = function(app) {
 			/* This is where we will eventually render the page for the recruiter to view 
 			aplicants */
 			
-			res.render('index');
-		//})
    	});
 
 	//route for the applicant quiz/survey: passing in the authenticateUser middleware
@@ -169,12 +167,30 @@ module.exports = function(app) {
    	});
 
    	app.get('/admin', function(req, res) {
+   		orm.viewAll('users').then(function(data){
+   			console.log(data);
+   			res.render('admin', data)
+   		})
+   	});
+
+   	/*This route is just grabbing the user info (Name and personal info)and the I chose to redirect
+   	to the home page. I assume we will work something out instead with the login page later.*/
+   	app.post('/createUser', function(req, res){
+   		orm.addUserToDB('users').then(function(data){
+
 		orm.selectAll('users').then(function(data){
 			console.log(data);
 			/* This is where we will eventually render the page for the recruiter to view 
 			aplicants */
 			res.render('admin', {users: data});
 		})
+
+   		orm.viewAll('users').then(function(data){
+		 userinfo
+   			console.log(data);
+   			res.render('admin', data)
+   		})
+		master
    	});
 
 	//   Simple route middleware to ensure user is authenticated between pages
@@ -199,7 +215,6 @@ module.exports = function(app) {
 			})
 		})
 	})
-
 	app.put('/addSkill', function(req, res){
 		orm.addSkills('').then(function(data){
 			console.log(data);
@@ -239,4 +254,3 @@ module.exports = function(app) {
 	});
 	
 };
-

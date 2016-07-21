@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DevMatch</title>
+
+       <!-- Custom CSS Files -->
+    <link href="css/login_style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -187,12 +190,42 @@
             <option value="10">Exactly like me</option> 
        	</select>
        	
-	</fieldset><!--end of personality questions-->
-
+<form class="create-update-form" action="/createSkills" method="POST">
+   <div class="form-group">
+           <br>
+           <h3>What do you value in a workplace culture?</h3>
+           <br>
+           <input type="checkbox" name="high energy" value="true">
+           High Energy
+           <input type="checkbox" name="no mediocrity" value="true">
+           Intolerance for Mediocrity
+           <input type="checkbox" name="remote work" value="true">
+           Remote Work Availability
+           <input type="checkbox" name="flex schedule" value="true" >
+           
+           Flexible Schedule
+           <input type="checkbox" name="learn opportunities" value="true">
+           Opportunities to Learn and Grow
+           <input type="checkbox" name="permanent" value="true">
+           Permanent Position
+           <input type="checkbox" name="contract" value="true">
+           Contract or Temporary Work
+           <input type="checkbox" name="individual space" value="true">
+           Individual Work Space
+           <input type="checkbox" name ="social" value="true">
+           Social Team Building Opportunities
+           <input type="checkbox" value="consistent" value="true">
+           Consistent Feedback
+           <input type="checkbox" value="equity driven" value="true">
+           Equity Driven
+           <input type="checkbox" value="work life balance" value="true">
+           Work Life Balance
+           </br>
+           </form>
 	<input type="submit" id="submit" value="Submit Info">
 	</form>
 	</div><!--end of info div-->
-
+</fieldset>
 </div><!--end of main div-->
 
 <!-- jQuery -->
