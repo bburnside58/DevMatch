@@ -7,10 +7,6 @@ Tech Used: Javascript, JQuery, HTML5, Bootstrap, CSS, Node.js, Express.js, MySQL
 
 ![Alt text](/public/img/Screen Shot 2016-07-26 at 3.40.57 PM.png?raw=true "Optional Title")
 
-![Alt text](/public/img/Screen Shot 2016-07-26 at 3.41.00 PM.png?raw=true "Optional Title")
-
-![Alt text](/public/img/Screen Shot 2016-07-26 at 3.41.02 PM.png?raw=true "Optional Title")
-
 ![Alt text](/public/img/Screen Shot 2016-07-26 at 3.41.06 PM.png?raw=true "Optional Title")
 
 ![Alt text](/public/img/Screen Shot 2016-07-26 at 3.41.14 PM.png?raw=true "Optional Title")
